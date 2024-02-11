@@ -1,0 +1,32 @@
+{
+  "name": "renTrue",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Masud Rana <masud_cse3@yahoo.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.2",
+    "express": "^4.18.2",
+    "module-alias": "^2.2.3",
+    "mongoose": "^8.1.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  },
+  "_moduleAliases": {
+    "@root": ".",
+    "@lib": "./src/lib",
+    "@db": "./src/db",
+    "@services": "./src/services",
+    "@app": "./src/app",
+    "@public": "./src/public",
+    "@utils": "./src/utils",
+    "@routes": "./src/routes",
+    "@middlewares": "./src/middlewares"
+  }
+}

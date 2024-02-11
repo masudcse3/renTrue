@@ -1,0 +1,21 @@
+# @format
+
+version: "3.8"
+
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: renTrueMongoDB
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: jasmin
+      MONGO_INITDB_ROOT_PASSWORD: amcmsd396
+      AUTH: admin
+    ports:
+      - "27017:27017"
+    volumes:
+      - "mongodb_data:/data/db"
+
+volumes:
+  mongodb_data:
+    driver: local
